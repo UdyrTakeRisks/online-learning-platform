@@ -1,0 +1,34 @@
+
+Method: GET  -  Content-Type: application/json
+
+http://localhost:9191/api/testcenter/health
+
+
+Method: GET  -  Content-Type: application/json
+
+
+
+
+
+http://localhost:9191/api/testcenter/view/exams
+
+
+http://localhost:9191/api/testcenter/add/test/center/branch/redhat
+
+{
+  "name":"GizaRedhat",
+  "address":"Street 3",
+  "location":"behind cairo uni",
+  "center_name":"redhat"
+}
+
+
+{
+  "examName":"RH124",
+  "studentName":"Mohamed",
+  "studentGrade":"80"
+}
+
+
+
+

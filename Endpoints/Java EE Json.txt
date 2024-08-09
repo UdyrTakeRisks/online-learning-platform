@@ -1,0 +1,126 @@
+
+Method: POST  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/register
+
+{
+ "name":"Mohamed",
+ "email":"mohamed@yahoo.com",
+ "password":"mo2025",
+ "affiliation":"fcai",
+ "bio":"swe at fcai",
+ "location":"15 may city"
+}
+
+Method: POST  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/login
+
+{
+ "name":"Mohamed",
+ "password":"mo2025"
+}
+
+Method: POST  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/instructor/register
+
+{
+ "name":"Omar",
+ "email":"omar@yahoo.com",
+ "password":"om2025",
+ "affiliation":"fcai",
+ "years_experience":"2",
+ "bio":"swe at fcai"
+}
+
+
+Method: POST  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/instructor/login
+
+{
+ "name":"Omar",
+ "password":"om2025"
+}
+
+{
+ "name":"Hassan",
+ "password":"om2025"
+}
+
+
+Method: POST  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/instructor/create/course
+
+{
+ "name":"Math",
+ "duration":"3",
+ "category":"cs",
+ "capacity":"10",
+ "enrolled_students":"0"
+}
+
+{
+ "name":"distributed systems",
+ "duration":"3",
+ "category":"swe",
+ "capacity":"50"
+}
+
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/logout
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/instructor/logout
+
+
+Method: GET  -  Content-Type: application/json
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/course/view/all/courses
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/course/search/course/{name}
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/course/search/courses/{category}
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/course/sort/courses
+
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/instructor/view/courses/info
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/view/course/enrollments
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/notify/course/enrollments
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/make/course/enrollment/{courseName}
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT/api/student/cancel/course/enrollment/{courseName}
+
+
+
+
+{
+ "name":"distributed systems",
+ "rating":"4.5",
+ "review_list":"One of the best courses"
+}
+
+
+{
+ "studentName":"Mohamed",
+ "courseName":"Math"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  wildfly:
+    build: ./ejbBackend
+    environment:
+      WILDFLY_PASSWORD: 123456789
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+    depends_on:
+      - mariadb
+  mariadb:
+    build: ./ejbDatabase
+    environment:
+      MARIADB_ROOT_PASSWORD: 123
+      MARIADB_DATABASE: platformDB 
+    ports:
+      - "3307:3306"
+

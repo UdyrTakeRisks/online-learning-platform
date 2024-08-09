@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mariadb:
+    build: ./msDatabase
+    environment:
+      MARIADB_ROOT_PASSWORD: 123
+      MARIADB_DATABASE: testcenterDB 
+    ports:
+      - "3306:3306"
+    
+  spring-boot-ms:
+    build: ./msBackend
+    ports:
+      - "9191:9191"
+    depends_on:
+      - mariadb
+
+

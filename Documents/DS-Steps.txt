@@ -1,0 +1,35 @@
+
+DOCUMENT [README]
+
+
+Tools Verisons:
+
+mariadb --version     
+
+mariadb from 11.3.2-MariaDB, client 15.2 for Linux (x86_64) using readline 5.1
+
+java --version
+
+openjdk 21.0.2 2024-01-16
+OpenJDK Runtime Environment (build 21.0.2+13)
+OpenJDK 64-Bit Server VM (build 21.0.2+13, mixed mode, sharing)
+
+
+STEPS:
+
+1- you should start with importing the mysql database.
+
+mysql -u <username> -p <password> platformDB < platformDB.sql 
+
+2- load mysql j connector mysql-connector-j-8.3.0.jar into your IDE
+
+
+3- attached is a java ee pdf to run the server with the project war file
+
+WILDFLY VERISON 32.0.0 FINAL
+
+4- run spring boot app too from intellij and apply your credentials in the application.properties file
+
+
+
+

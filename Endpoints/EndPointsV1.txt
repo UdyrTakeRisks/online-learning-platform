@@ -1,0 +1,104 @@
+Endpoints for Admin:
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/health: Check admin's state is exist or not.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/view/instructors:The admin view all the instructors on the system.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/instructor/{id}:The admin get an specific instructor info by his "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/update/instructor: The admin can modify instructor info.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/delete/instructor/{instructorName}:The admin can delete an instructor by instructor's name.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/view/students: The admin view all the students on the system.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/student/{id}:The admin get an specific student info by his "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/update/student: The admin can modify student info.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/delete/instructor/{id}:The admin can delete an instructor by instructor's "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/review/course/content:The admin can review the content of the whole courses.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/course/{id}: The admin can get and view a specific course content by its "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/edit/course: The admin can modify the info of specific course.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/remove/course/{id}: The admin can delete a course by its "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/check/course/popularity: The admin checks the courses popularity from the number of enrolments.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/admin/check/course/review: The admin can get average courses rating.
+
+
+Endpoints for Course:
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/course/view/all/courses: you can view all the course on the system
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/course/search/course/{name}: you search for specific course by its name.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/course/search/courses/{category}: you search for specific course by its category.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/course/sort/courses: you can sort courses from its' ratings.
+
+
+Endpoints for Exam:
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/health: you can check exam state if it's exist or not.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/get/testcenter/id: you can get or retrieve testcenter "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/create/exam/{testCenterId}: you can create an exam by testcenter "ID".
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/set/student/grade: you can set exam grade for specific student -student should be already registered for exam-, testcenter should update student grade to it.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/view/exams:  you can view all the exams.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/exam/view/student/grades:you can get the student grades.
+
+
+Endpoints for Instructor:
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/health: you can check instructor state if it's exist or not.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/register: you can register as an instructor.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/login: you can login as an instructor.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/logout: you can logout from the instructor account.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/create/course: you can create a course as an instructor.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/view/courses/info: you can get courses info related to this instructor.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/notify/course/enrollments: you can check the course enrolment of specific student.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/accept/student/enrollment: you can accept the request of student enrolment.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/instructor/reject/student/enrollment: you can reject the request of student enrolment.
+
+
+Endpoints for Students:
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/health: you can check student state if it's exist or not.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/register: you can register as a student.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/login: you can login as a student.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/logout: you can logout from the student account.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/view/course/enrollments: you can view all your course enrolments.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/make/course/enrollment/{courseName}: you can ask for enrolment for specific course by courseName
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/cancel/course/enrollment/{courseName}: you can cancel the request that you have done to enroll a specific course by courseName
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/notify/course/enrollments: you can get notified by the course that you got enroll in your account.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/make/course/review:you can make review for specfic course.
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/search/available/test-centers/{location}:you search for testcenters which is near of location by your location
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/register/exam/{examName}:you can register for doing an exam by examName
+
+http://localhost:8080/online-platform-app-1.0-SNAPSHOT//api/student/view/exam/grades/history: you can view all student grades for all exams.

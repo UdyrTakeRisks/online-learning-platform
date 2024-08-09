@@ -1,0 +1,26 @@
+
+
+1- Enter the directory of Spring Boot
+
+use $ docker-compose up --build
+
+wait till the dockerization process completion of build and run to complete
+
+
+
+2- Enter the directory of Java EE
+
+use $ docker-compose up --build
+
+wait till the dockerization process completion of build and run to complete
+
+
+3- Enter the directory of Frontend
+
+use $ docker build -t frontend-img .
+    $ docker run --name front-container -p 3000:3000 front-container
+
+wait till the dockerization process completion of build and run 
+
+
+
